@@ -1,75 +1,116 @@
-# React + TypeScript + Vite
+# Roman Chernukha | DevOps Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern portfolio website built with React, TypeScript and Tailwind CSS. It showcases my DevOps projects, technical skills, professional background and provides access to my resume and contact information.
 
-Currently, two official plugins are available:
+## Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://romanchernukha8-ctrl.github.io/portfolio-v2/
 
-## React Compiler
+## Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Portfolio Preview](./public/preview.png)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Responsive modern interface
+- Architecture diagram of a Kubernetes-based platform
+- Project showcase
+- Technical skills overview
+- Downloadable PDF resume
+- Contact section
+- GitHub Pages deployment
+- Optimized for performance and SEO
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Frontend
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
+### DevOps
+
+- Docker
+- Kubernetes
+- Helm
+- GitHub Actions
+- Terraform
+- AWS
+- Linux
+
+## Getting Started
+
+Clone the repository
+
+```bash
+git clone https://github.com/romanchernukha8-ctrl/portfolio-v2.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Run the development server
+
+```bash
+npm run dev
+```
+
+Build the project
+
+```bash
+npm run build
+```
+
+Deploy to GitHub Pages
+
+```bash
+npm run deploy
+```
+
+## Project Structure
 
 ```
+src/
+├── assets/
+├── components/
+├── sections/
+├── App.tsx
+└── main.tsx
+
+public/
+├── preview.png
+├── Roman_Chernukha_DevOps_Resume.pdf
+└── favicon.svg
+```
+
+## Lighthouse Results
+
+| Metric | Score |
+|---------|------:|
+| Performance | 100 |
+| Accessibility | 96 |
+| Best Practices | 100 |
+| SEO | 91 |
+
+## Contact
+
+Email
+
+romanchernukha8@gmail.com
+
+LinkedIn
+
+https://www.linkedin.com/in/roman-chernukha-4052b63ba/
+
+Portfolio
+
+https://romanchernukha8-ctrl.github.io/portfolio-v2/
+
+## About
+
+This portfolio was created to present my DevOps projects, technical skills and practical experience while preparing for my first Junior DevOps Engineer position. It serves as a central place to explore my work, resume and GitHub projects.
