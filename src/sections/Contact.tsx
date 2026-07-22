@@ -82,8 +82,9 @@ export default function Contact() {
         </a>
 
         <a
-          href="/Roman_Chernukha_DevOps_Resume.pdf"
+          href={`${import.meta.env.BASE_URL}Roman_Chernukha_DevOps_Resume.pdf`}
           target="_blank"
+          rel="noopener noreferrer"
           className="rounded-2xl border border-slate-800 bg-slate-900 p-8 transition hover:border-blue-500"
         >
           <FaFilePdf className="mb-5 text-4xl text-blue-400" />
